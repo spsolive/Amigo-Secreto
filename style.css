@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*height: 100vh;define usar 100 por cento da altura da tela*/
+    box-sizing: border-box;/*impede que os itens filho saiam dos limites do pai*/
+    font-family: monospace, sans-serif;
+}
+
+body {
+    background-color: #f3f3f0;
+    color: #1a0ce0;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.container {
+    background-color: #ebe70b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1a0ce0; /*côr do título "Sortear Amigo Secreto"*/
+}
+
+/*caixa para inserir nomes*/
+.input__section {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+
+#names {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #333;/*contorno caixa inserir nome*/
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;/*caixas, adicionar, sortear, reiniciar*/
+    color: #11eb11;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #d013d6;/*Muda a cor do botão ao posicionar o ponteiro*/
+}
+
+.erro {
+    color: #ff0707;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.list__section {
+    margin-bottom: 10px;
+}
+
+.list {
+    margin: 10px 0 20px 0;
+}
+
+.button__section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.result__section {
+    margin-top: 20px;
+}
+
+.result {
+    font-size: 1rem; /*define o tamanho da fonte em 16 pixels*/
+    color: #553aee; /*lista de Resultado*/
+}
+
+.result span {
+    display: block;
+    margin: 10px 0 20px 0;
+}
